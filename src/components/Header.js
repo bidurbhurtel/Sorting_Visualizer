@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav, Container} from 'react-bootstrap'
+import { Navbar, Nav, Container, Button, ButtonGroup} from 'react-bootstrap'
 
 const Header = () => {
     return (
@@ -9,9 +9,8 @@ const Header = () => {
                     <Navbar.Brand href="/">Sorting Visualizer</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ml-auto">                                                     
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#link">Link</Nav.Link>                    
+                        <Nav className="ml-auto">                                                                            
+                                      
                         </Nav>                
                     </Navbar.Collapse>
                 </Container>

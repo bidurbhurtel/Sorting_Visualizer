@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+#scratch file
+/scratch.js
+
 # testing
 /coverage
 

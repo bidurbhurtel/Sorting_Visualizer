@@ -1,3 +1,4 @@
+//Insertion Sorting Function
 const getInsertionSortAnimations = (arr) => {
     const animations = []
     let l = arr.length
@@ -17,6 +18,8 @@ const getInsertionSortAnimations = (arr) => {
     }
     return animations
 }
+
+//Bubble Sorting Function
 
 let arr = []
 for (var i=0, t=10; i<t; i++){

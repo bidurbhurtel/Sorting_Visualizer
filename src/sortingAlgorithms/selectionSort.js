@@ -11,10 +11,13 @@ const getSelectionSortAnimations = (array) => {
     let l = array.length
     for (let i=0; i<l; i++){
         let minIndex = i
-        animations.push(['change', i, minIndex])
+        // animations.push(['change', i, minIndex])
         for (let j = i+1; j<l; j++){
+            // animations.push(['revertChange', i, minIndex])
+            animations.push(['change', i, j])
+            animations.push(['revertChange', i, j])   
             if (array[j] < array[minIndex] ){
-                animations.push(['revertChange', i, minIndex])
+                animations.push(['revertChange', i, minIndex])                
                 minIndex = j
                 animations.push(['change', i, minIndex])
             }
